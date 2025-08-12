@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int str_len(const char *str) {
+    int length = 0;
+    while(str[length] != '\0'){
+        length++;
+    }
+    return length;
+}
+
+int main(){
+    char text[] = "Hi";
+    
+    int length = str_len(text);
+    printf("%d", length);
+}
